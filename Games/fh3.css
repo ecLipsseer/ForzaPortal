@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-decoration-break: inherit;
+}
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    /* height: 100%; */
+
+}
+.wrapper{
+    display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.main{
+    max-width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    flex: 1 0 auto;
+
+}
+
+
+
+/*---------------shapka--------------------*/
+.forza-portal-logo{
+    margin-top: 10px;
+
+    
+}
+.forza-portal-logo img{
+    object-fit: cover;
+    width: 100%;
+    
+    height: auto;
+    /* background-color: aliceblue; */
+}
+
+
+
+
+
+/*-------------content-----------------*/
+.content{
+    
+    width: 1080px;
+    height: auto;
+    margin-right: 10px;
+    /* background-color: antiquewhite; */
+    float: left;
+    /* position: relative; */
+}
+.main-news{
+    
+    margin: 10px auto;
+    /* margin-right: 0px; */
+    width: 100%;
+    height: 200px;
+    margin-right: 0px;
+    background-color: antiquewhite;
+    float: left;
+    position: relative;
+}
+.main-news a{
+    text-decoration: none;
+    width: 100%;
+    height: 200px;
+}
+.main-news a div img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    opacity: 1;
+    transition: opacity 200ms linear, transform 200ms linear;
+    /* display: block; */
+}
+.newsop{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    
+}
+.main-news:hover div img{
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+.textop{
+    position: absolute;
+    top: 70%;
+    opacity: 70%;
+    width: 100%;
+    height: 30%;
+    background-color: #000000;
+    transition: opacity 200ms linear, top 200ms linear, height 200ms linear;
+    
+}
+.mainnewstext{
+    color: rgba(255, 255, 255, 0.795);
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    transition: top 250ms linear;
+    
+}
+
+.hidtext{
+    width: 180%;
+    height: auto;
+    opacity: 0;
+    font-size: small;
+    position: absolute;
+    top: 60%;
+    transition: opacity 250ms linear, top 200ms linear;
+    
+}
+
+.main-news:hover .textop {
+    opacity: 0%;
+    top: 50%;
+    height: 50%;
+    transition: opacity 200ms linear, top 200ms linear, height 200ms linear;
+}
+.main-news:hover .mainnewstext{
+    
+    top: 50%;
+    transition: top 200ms linear;
+
+}
+.main-news:hover .hidtext{
+    width: 180%;
+    height: auto;
+    opacity: 1;
+    top: 100%;
+    transition: opacity 250ms linear, top 200ms linear;
+}
+
+
+
+/*Вторая новость*/
+
+
+
+.second-news{
+    margin: 10px auto;
+    margin-top: 0px;
+    /* margin-right: 0px; */
+    width: 100%;
+    height: 500px;
+    margin-right: 0px;
+    background-color: antiquewhite;
+    float: left;
+    position: relative;
+}
+.second-news a{
+    text-decoration: none;
+    width: 100%;
+    height: 500px;
+}
+.second-news a div img{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    opacity: 1;
+    transition: opacity 500ms linear, transform 200ms linear;
+    /* display: block; */
+}
+.second-news:hover .textop2 {
+    opacity: 0%;
+    top: 40%;
+    height: 60%;
+    transition: opacity 400ms linear, top 400ms linear, height 400ms linear;
+}
+.second-news:hover .mainnewstext2{
+    
+    top: 80%;
+    transition: top 200ms linear;
+
+}
+
+.second-news:hover div img{
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+.newsop2{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    
+}
+.textop2{
+    position: absolute;
+    top: 85%;
+    opacity: 70%;
+    width: 100%;
+    height: 15%;
+    background-color: #000000;
+    transition: opacity 400ms linear, top 200ms linear, height 200ms linear;
+    
+}
+.mainnewstext2{
+    color: rgba(255, 255, 255, 0.795);
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    transition: top 340ms linear;
+    
+}
+
+.hidtext2{
+    opacity: 0;
+    font-size: small;
+    position: absolute;
+    top: 60%;
+    width: 600px;
+    transition: opacity 400ms linear, top 400ms linear;
+    
+}
+.second-news:hover .hidtext2{
+    opacity: 1;
+    top: 100%;
+    transition: opacity 400ms linear, top 300ms linear;
+}
+/*--------------------3 news-----------------*/
+
+.third-news{
+    margin: 10px auto;
+    margin-top: 0px;
+    margin-right: 10px;
+    width: 535px;
+    height: 250px;
+    margin-right: 0px;
+    background-color: antiquewhite;
+    float: left;
+    position: relative;
+}
+.third-news a{
+    text-decoration: none;
+    width: 100%;
+    height: 250px;
+}
+.third-news a div img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    opacity: 1;
+    transition: opacity 500ms linear, transform 200ms linear;
+    /* display: block; */
+}
+.third-news:hover div img{
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+.newsop3{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    
+}
+.textop3{
+    position: absolute;
+    top: 85%;
+    opacity: 70%;
+    width: 100%;
+    height: 15%;
+    background-color: #000000;
+    transition: opacity 400ms linear, top 200ms linear, height 200ms linear;
+    
+}
+.third-news:hover .textop3{
+    opacity: 0%;
+    top: 40%;
+    height: 60%;
+    transition: opacity 400ms linear, top 400ms linear, height 400ms linear;
+}
+.mainnewstext3{
+    color: rgba(255, 255, 255, 0.795);
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    transition: top 340ms linear;
+    
+}
+.third-news:hover .mainnewstext3{
+    
+    top: 65%;
+    transition: top 200ms linear;
+
+}
+.hidtext3{
+    opacity: 0;
+    width: 500px;
+    font-size: small;
+    position: absolute;
+    top: -50%;
+    transition: opacity 100ms linear, top 400ms linear;
+    
+}
+.third-news:hover .hidtext3{
+    opacity: 1;
+    width: 500px;
+    top: 100%;
+    transition: opacity 700ms linear, top 300ms linear;
+}
+
+/*-------------------------4 news-------------------------*/
+
+.forth-news{
+    margin: 10px auto;
+    margin-top: 0px;
+    margin-left: 10px;
+    /* margin-right: 0px; */
+    width: 535px;
+    height: 250px;
+    margin-right: 0px;
+    background-color: antiquewhite;
+    float: left;
+    position: relative;
+}
+.forth-news a{
+    text-decoration: none;
+    width: 100%;
+    height: 250px;
+}
+.forth-news a div img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    opacity: 1;
+    transition: opacity 500ms linear, transform 200ms linear;
+    /* display: block; */
+}
+.forth-news:hover div img{
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+.newsop4{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    
+}
+.textop4{
+    position: absolute;
+    top: 85%;
+    opacity: 70%;
+    width: 100%;
+    height: 15%;
+    background-color: #000000;
+    transition: opacity 400ms linear, top 200ms linear, height 200ms linear;
+    
+}
+.forth-news:hover .textop4{
+    opacity: 0%;
+    top: 40%;
+    height: 60%;
+    transition: opacity 400ms linear, top 400ms linear, height 400ms linear;
+}
+.mainnewstext4{
+    color: rgba(255, 255, 255, 0.795);
+    position: absolute;
+    top: 85%;
+    left: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    transition: top 340ms linear;
+    
+}
+.forth-news:hover .mainnewstext4{
+    
+    top: 68%;
+    transition: top 200ms linear;
+
+}
+.hidtext4{
+    opacity: 0;
+    width: 500px;
+    font-size: small;
+    position: absolute;
+    top: 0%;
+    transition: opacity 200ms linear, top 400ms linear;
+    
+}
+.forth-news:hover .hidtext4{
+    opacity: 1;
+    top: 100%;
+    width: 500px;
+    transition: opacity 400ms linear, top 300ms linear;
+}
+
+
+
+@media (max-width: 1080px){
+    html, body{overflow-x: visible;}
+    .wrapper{display: block;}
+    .main {
+        width: 100vw;
+        height: auto;
+    }
+    .forza-portal-logo{
+        width: 100vw;
+    }
+    .forza-portal-logo img{
+        width: 100vw;
+    }
+    .content{
+        width: 100vw;
+        
+    }
+    .main-news{
+        width: 100vw;
+    }
+    .main-news a div img{
+        width: 100vw;
+    }
+    .slider{
+        width: 100vw;
+    }
+    .second-news{
+        width: 100vw;
+    }
+    .second-news a div img{
+        width: 100vw;
+    }
+    .nav-slider, .man-slider{
+        width: 100vw;
+    }
+    .third-news, .forth-news{
+        width: 49.5vw;
+        font-size: 20px;
+    }
+    .forth-news{
+        margin-left: 1vw;
+    }
+    .hidtext, .main-news:hover .hidtext{
+        width: 90vw;
+    }
+    .hidtext3, .third-news:hover .hidtext3{
+        width: 48.5vw;
+        font-size: 12px;
+    }
+    .hidtext4, .forth-news:hover .hidtext4{
+        width: 48.5vw;
+        font-size: 12px;
+    }
+    .mainnewstext4, .mainnewstext3{
+        font-size: 20px;
+    }
+
+
+    .footer-socials{
+        width: 100%;
+    }
+
+    
+    }
+@media (max-width: 650px){
+    .forza-portal-logo{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .main-news a div img{
+        width: 100vw;
+    }
+    .mainnewstext{
+        font-size: 25px;
+    }
+    .hidtext, .main-news:hover .hidtext, .hidtext3, .third-news:hover .hidtext3, .hidtext2, .second-news:hover .hidtext2 {
+        width: 90vw;
+        font-size: 10px;
+    }       
+    .mainnewstext2{
+        font-size: 25px;
+    }
+    
+    .second-news a div img{
+        width: 150vw;
+    }
+    .third-news, .forth-news{
+        width: 100vw;
+        font-size: 20px;
+    }
+    .forth-news{
+        margin-left: 0vw;
+    }
+    .hidtext4, .forth-news:hover .hidtext4{
+        width: 90vw;
+        font-size: 10px;
+    }
+       
+}
+
+
+

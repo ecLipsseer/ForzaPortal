@@ -1,0 +1,939 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-decoration-break: inherit;
+    
+}
+html, body{
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    
+}
+body {
+    background-color: rgb(0, 0, 0);
+    /* height: 100%; */
+
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+}
+.main{
+    max-width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    flex: 1 0 auto;
+
+}
+
+
+
+.content{
+    
+    margin-right: 0px;
+    width: 870px;
+    
+    margin-right: 10px;
+    /* background-color: antiquewhite; */
+    float: left;
+    /* position: relative; */
+}
+
+.forza-portal-logo{
+    margin-top: 10px;
+    width: 1080px;
+    height: 75px;
+}
+
+
+
+.main-news{
+    
+    margin: 10px auto;
+    /* margin-right: 0px; */
+    width: 870px;
+    height: 200px;
+    margin-right: 0px;
+    background-color: antiquewhite;
+    float: left;
+    position: relative;
+}
+.main-news a{
+    text-decoration: none;
+    width: 870px;
+    height: 200px;
+}
+.main-news a div img{
+    object-fit: cover;
+    width: 870px;
+    height: 200px;
+    opacity: 1;
+    transition: opacity 200ms linear, transform 200ms linear;
+    /* display: block; */
+}
+.newsop{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    
+}
+.main-news:hover div img{
+    opacity: 0.3;
+    transform: scale(1.05);
+    
+}
+.textop{
+    position: absolute;
+    top: 70%;
+    opacity: 70%;
+    width: 100%;
+    height: 30%;
+    background-color: #000000;
+    transition: opacity 200ms linear, top 200ms linear, height 200ms linear;
+    
+}
+.mainnewstext{
+    color: rgba(255, 255, 255, 0.795);
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    transition: top 250ms linear;
+    
+}
+
+.hidtext{
+    opacity: 0;
+    font-size: 15px;
+    position: absolute;
+    top: 60%;
+    transition: opacity 250ms linear, top 200ms linear;
+    
+}
+
+.main-news:hover .textop {
+    opacity: 0%;
+    top: 50%;
+    height: 50%;
+    transition: opacity 200ms linear, top 200ms linear, height 200ms linear;
+}
+.main-news:hover .mainnewstext{
+    
+    top: 50%;
+    transition: top 200ms linear;
+
+}
+.main-news:hover .hidtext{
+    opacity: 1;
+    top: 100%;
+    transition: opacity 250ms linear, top 200ms linear;
+}
+
+ 
+
+/*Вторая новость*/
+
+.background{
+    background: rgba(0, 0, 0, 0.795);
+}
+.slider{
+    width: 870px;
+    height: 500px;
+    margin: 10px auto;
+    margin-top: 0px;
+    margin-right: 0px;
+    float: left;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.btns{
+    float: left;
+    width: 870px;
+    height: 1px;
+    position: relative;
+    top: 12px;
+    z-index: 10;
+}
+.man-slider{
+    position: relative;
+    top: -16px;
+    display: flex;
+    width: 870px;
+    height: 16px;
+    justify-content: center;
+
+
+}
+.man-btn{
+    border: 2px solid rgba(0, 0, 0, 0.795);
+    padding: 5px;
+    width: 50px;
+    height: 2px;
+    cursor: pointer;
+    transition: 1s;
+}
+.man-btn:not(:last-child){
+    margin-right: 10px;
+}
+.man-btn:hover{
+    background: rgba(0, 0, 0, 0.795);
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+        
+}
+
+.nav-slider{
+    position: relative;
+    display: flex;
+    width: 870px;
+    height: 16px;
+    justify-content: center;
+
+
+}
+.nav-slider div{
+    border: 2px solid rgba(0, 0, 0, 0.795);
+    padding: 5px;
+    width: 50px;
+    height: 2px;
+    cursor: pointer;
+    transition: 1s;
+}
+.nav-slider div:not(:last-child){
+    margin-right: 10px;
+}
+#radio1:checked ~ .nav-slider .btn1{
+    background: rgba(0, 0, 0, 0.795);
+}
+#radio2:checked ~ .nav-slider .btn2{
+    background: rgba(0, 0, 0, 0.795);
+    
+}
+.second-news{
+    margin-top: 0px;
+    width: 870px;
+    height: 500px;
+    margin-right: 0px;
+    float: left;
+    position: relative;
+    
+}
+.second-news a{
+    text-decoration: none;
+    width: 870px;
+    height: 500px;
+}
+.second-news a div img{
+    object-fit: cover;
+    width: 870px;
+    height: 500px;
+    opacity: 1;
+    transition: opacity 500ms linear, transform 200ms linear;
+    /* display: block; */
+}
+.second-news:hover .textop2 {
+    opacity: 0%;
+    top: 40%;
+    height: 60%;
+    transition: opacity 400ms linear, top 400ms linear, height 400ms linear;
+}
+.second-news:hover .mainnewstext2{
+    
+    top: 80%;
+    transition: top 200ms linear;
+
+}
+.second-news:hover .hidtext2{
+    opacity: 1;
+    top: 100%;
+    transition: opacity 400ms linear, top 300ms linear;
+}
+.second-news:hover div img{
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+.newsop2{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    
+}
+.textop2{
+    position: absolute;
+    top: 85%;
+    opacity: 70%;
+    width: 100%;
+    height: 15%;
+    background-color: #000000;
+    transition: opacity 400ms linear, top 200ms linear, height 200ms linear;
+    
+}
+.mainnewstext2{
+    color: rgba(255, 255, 255, 0.795);
+    position: absolute;
+    top: 87%;
+    left: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    transition: top 340ms linear;
+    
+}
+
+.hidtext2{
+    opacity: 0;
+    font-size: small;
+    position: absolute;
+    top: 60%;
+    transition: opacity 400ms linear, top 400ms linear;
+    
+}
+
+
+
+
+
+
+
+
+
+/*--------races-------------*/
+
+.races{
+    /* margin-left: 10px; */
+    margin-top: 10px;
+    
+    width: 200px;
+    height: auto;
+    /* background-color: #1b1b1b9a; */
+    float: left;
+    
+    
+}
+.today{
+    box-sizing: border-box;
+    border: 1px solid #3333339a;
+    border-bottom: 0px;
+    display: block;
+    text-decoration: none;
+    
+    width: 200px;
+    height: 35px;
+    background-color: #1b1b1b9a;
+    color: rgba(255, 255, 255, 0.795);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    font-variant-caps:all-small-caps;
+}
+.today a{
+    
+    text-decoration: none;
+    line-height:30px;
+    color: rgba(255, 255, 255, 0.795);
+}
+.today a:hover {
+    color: rgb(136, 32, 32);
+    transition: background-color 250ms linear, color 250ms linear;
+}
+
+.today-matches{
+    border: 1px solid #3333339a;
+}
+
+.first-match-today{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(0, 0, 0);
+}
+
+.left-logo-match{
+    width: 10%;
+    height: 50%;
+    /* background-color: #000000; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 5%;
+}
+.left-logo-match img{
+    width: 100%;
+    height: 100%;
+}
+.left-team-name{
+    width: 30%;
+    height: 50%;
+    /* background-color: aqua; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 15%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+}
+.left-team-name a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: small;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: -10%;
+}
+.left-team-name a:hover{
+    color: rgb(136, 32, 32);
+    transition: background-color 250ms linear, color 250ms linear;
+}
+.versus{
+    cursor:default;
+    width: 10%;
+    height: 50%;
+    /* background-color: aqua; */
+    color: rgba(255, 255, 255, 0.795);
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 10%;
+    float: left;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.right-logo-match{
+    width: 10%;
+    height: 50%;
+    /* background-color: #000000; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 45%;
+}
+.right-logo-match img{
+    width: 100%;
+    height: 100%;
+}
+.right-team-name{
+    width: 30%;
+    height: 50%;
+    /* background-color: aqua; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 15%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+}
+.right-team-name a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: small;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: -10%;
+}
+.right-team-name a:hover{
+    color: rgb(136, 32, 32);
+    transition: background-color 250ms linear, color 250ms linear;
+}
+
+
+.upcoming{
+    border: 1px solid #3333339a;
+    border-bottom: 0px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    
+    width: 200px;
+    height: 35px;
+    background-color: #1b1b1b9a;
+    color: rgba(255, 255, 255, 0.795);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    font-variant-caps:all-small-caps;
+}
+.upcoming a{
+    
+    text-decoration: none;
+    line-height:30px;
+    color: rgba(255, 255, 255, 0.795);
+}
+.upcoming a:hover {
+    color: rgb(136, 32, 32);
+    transition: background-color 250ms linear, color 250ms linear;
+}
+.upcoming-matches{
+    border: 1px solid #3333339a;
+    
+}
+
+.first-upcoming-match{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(0, 0, 0);
+}
+
+.left-team-name{
+    width: 30%;
+    height: 50%;
+    /* background-color: aqua; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 15%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+}
+.left-team-name a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: small;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: -10%;
+}
+.left-team-name a:hover{
+    color: rgb(136, 32, 32);
+    transition: background-color 250ms linear, color 250ms linear;
+}
+
+
+
+
+.right-team-name{
+    width: 30%;
+    height: 50%;
+    /* background-color: aqua; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 15%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+}
+.right-team-name a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: small;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: -10%;
+}
+.right-team-name a:hover{
+    color: rgb(136, 32, 32);
+    transition: background-color 250ms linear, color 250ms linear;
+}
+.first-up-match-date{
+    cursor:default;
+    width: 100%;
+    height: 50%;
+    background-color: #2b2b2b9a;
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    font-size: small;
+    /* font-variant: small-caps; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*--------------------resultes-------------------*/
+.results-main{
+    width: 200px;
+    height: auto;
+    float: left;
+}
+.results-block{
+    /* margin-left: 10px; */
+    /* margin-top: 10px; */
+    width: 100%;
+    height: auto;
+    background-color: #1b1b1b9a;
+    float: left;
+    border: 1px solid #3333339a;
+    /* border-bottom: 0px; */
+    box-sizing: border-box;
+    
+}
+.results{
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #3333339a;
+    border-bottom: 0px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 35px;
+    background-color: #1b1b1b9a;
+    color: rgba(255, 255, 255, 0.795);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    font-variant-caps:all-small-caps;
+    float: left;
+}
+.results a{
+    
+    text-decoration: none;
+    line-height:30px;
+    color: rgba(255, 255, 255, 0.795);
+}
+.results a:hover {
+    color: rgb(136, 32, 32);
+    transition: background-color 250ms linear, color 250ms linear;
+}
+
+.result{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(0, 0, 0);
+}
+.left-logo-result{
+    width: 10%;
+    height: 50%;
+    /* background-color: #000000; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 5%;
+}
+.left-logo-result img{
+    width: 100%;
+    height: 100%;
+}
+
+.left-res-team-name{
+    width: 30%;
+    height: 50%;
+    /* background-color: aqua; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 15%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+}
+.left-res-team-name a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: small;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: -10%;
+}
+.left-res-team-name a:hover{
+    color: rgb(136, 32, 32);
+    transition: background-color 250ms linear, color 250ms linear;
+}
+.right-logo-result{
+    width: 10%;
+    height: 50%;
+    /* background-color: #000000; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 95%;
+    
+}
+.right-logo-result img{
+    width: 100%;
+    height: 100%;
+}
+.right-res-team-name{
+    width: 30%;
+    height: 50%;
+    /* background-color: aqua; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 5%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+}
+.right-res-team-name a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.795);
+    font-size: small;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: -10%;
+}
+.right-res-team-name a:hover{
+    color: rgb(136, 32, 32);
+    transition: background-color 250ms linear, color 250ms linear;
+}
+.down-team-name a:hover{
+    color: rgb(136, 32, 32);
+    transition: background-color 250ms linear, color 250ms linear;
+}
+.lose{
+    cursor:default;
+    width: 10%;
+    height: 50%;
+    /* background-color: aqua; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: rgba(194, 26, 26, 0.795);
+}
+.versus-results{
+    cursor:default;
+    width: 10%;
+    height: 50%;
+    /* background-color: aqua; */
+    color: rgba(255, 255, 255, 0.795);
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    /* left: 10%; */
+    float: left;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.win{
+    cursor:default;
+    width: 10%;
+    height: 50%;
+    /* background-color: aqua; */
+    float: left;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-decoration: none;
+    color: rgba(26, 194, 76, 0.795);
+}
+.result-date{
+    cursor:default;
+    width: 100%;
+    height: 50%;
+    background-color: #2b2b2b9a;
+    color: rgba(255, 255, 255, 0.795);
+    text-align: center;
+    font-size: small;
+    /* font-variant: small-caps; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width: 1080px){
+    html, body{overflow-x: visible;}
+    .wrapper{display: block;}
+    .main {
+        width: 100vw;
+        height: auto;
+    }
+    .forza-portal-logo{
+        width: 100vw;
+    }
+    .forza-portal-logo img{
+        width: 100vw;
+    }
+    .content{
+        width: 100vw;
+        
+    }
+    .main-news{
+        width: 100vw;
+    }
+    .main-news a div img{
+        width: 100vw;
+    }
+    .slider{
+        width: 100vw;
+    }
+    .second-news{
+        width: 100vw;
+    }
+    .second-news a div img{
+        width: 100vw;
+    }
+    .nav-slider, .man-slider{
+        width: 100vw;
+    }
+    
+    
+
+    .races{
+        margin-left: 0.5vw;
+        width: 49vw;
+    }
+    .today{
+        width: 49vw;
+    }
+    .upcoming{
+        width: 49vw;
+    }
+    .right-logo-match img{
+        width: 50%;
+    }
+    .left-logo-match img{
+        width: 50%;
+    }
+    .results{
+        width: 49vw;
+    }
+    .results-main{
+        margin-left: 0.5vw;
+        width: 49vw;
+        margin-left: 1vw;
+        /* margin-right: 10px; */
+    }
+    .left-logo-result img{
+        width: 50%;
+    }
+    .right-logo-result img{
+        width: 50%;
+    } 
+    }
+@media (max-width: 650px){
+    .forza-portal-logo{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .mainnewstext{
+        font-size: 30px;
+    }
+    .hidtext{
+        font-size: 12px;
+    }       
+    .mainnewstext2{
+        font-size: 30px;
+    }
+    .hidtext2{
+        font-size: 12px;
+    }    
+}
+@media (max-width: 480px){
+    .forza-portal-logo{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .main-news a div img{
+        width: 100vw;
+    }
+    .mainnewstext{
+        font-size: 25px;
+    }
+    .hidtext{
+        font-size: 12px;
+    }       
+    .mainnewstext2{
+        font-size: 25px;
+    }
+    .hidtext2{
+        font-size: 12px;
+    }
+    .second-news a div img{
+        width: 100vw;
+    }
+    .races{
+        width: 100vw;
+    }
+    .today{
+        width: 100vw;
+    }
+    .upcoming{
+        width: 100vw;
+    }
+    .right-logo-match img{
+        width: 50%;
+    }
+    .left-logo-match img{
+        width: 50%;
+    }
+    .results{
+        width: 100vw;
+    }
+    .results-main{
+        width: 100vw;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .left-logo-result img{
+        width: 50%;
+    }
+    .right-logo-result img{
+        width: 50%;
+    }          
+}
+    
+    
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

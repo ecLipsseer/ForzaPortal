@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-decoration-break: inherit;
+}
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    /* height: 100%; */
+
+}
+.wrapper{
+    display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.main{
+    max-width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    flex: 1 0 auto;
+
+}
+
+.forza-portal-logo{
+    margin-top: 10px;
+    width: 1080px;
+    height: 75px;
+}
+
+.tournament-operators{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.795);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    /* background-color: #1b1b1b9a; */
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+.content{
+    
+    width: 1080px;
+    height: auto;
+    
+    /* background-color: antiquewhite; */
+    float: left;
+    /* position: relative; */
+}
+
+.forza-portal-logo{
+    margin-top: 10px;
+    width: 1080px;
+    height: 75px;
+}
+.Team-Wars{
+    /* margin: 10px auto; */
+    margin-right: 1%;
+    width: 49.5%;
+    height: 100%;
+    /* margin-right: 0px; */
+    background-color: antiquewhite;
+    float: left;
+    position: relative;
+}
+.Team-Wars a{
+    text-decoration: none;
+    width: 535px;
+    height: 500px;
+}
+.Team-Wars a div img{
+    object-fit: cover;
+    width: 535px;
+    height: 500px;
+    opacity: 1;
+    transition: opacity 200ms linear, transform 200ms linear;
+    /* display: block; */
+}
+.newsop{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    
+}
+.Team-Wars:hover div img{
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+.textop{
+    position: absolute;
+    top: 70%;
+    opacity: 70%;
+    width: 100%;
+    height: 30%;
+    background-color: #000000;
+    transition: opacity 200ms linear, top 200ms linear, height 200ms linear;
+    
+}
+.mainnewstext{
+    color: rgba(255, 255, 255, 0.795);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 73%;
+    left: 0%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    transition: top 250ms linear;
+    text-align: center;
+    
+}
+
+.hidtext{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    font-size: small;
+    position: absolute;
+    top: 60%;
+    transition: opacity 250ms linear, top 200ms linear;
+    
+}
+
+.Team-Wars:hover .textop {
+    opacity: 0%;
+    top: 50%;
+    height: 50%;
+    transition: opacity 200ms linear, top 200ms linear, height 200ms linear;
+}
+.Team-Wars:hover .mainnewstext{
+    
+    top: 65%;
+    transition: top 200ms linear;
+
+}
+.Team-Wars:hover .hidtext{
+    opacity: 1;
+    top: 100%;
+    transition: opacity 250ms linear, top 200ms linear;
+}
+
+
+
+
+.FIOR{
+    
+    /* margin: 10px auto; */
+
+    width: 49.5%;
+    height: 500px;
+
+    background-color: antiquewhite;
+    float: left;
+    position: relative;
+}
+.FIOR a{
+    text-decoration: none;
+    width: 535px;
+    height: 500px;
+    
+}
+.FIOR a div img{
+    object-fit: cover;
+    width: 535px;
+    height: 500px;
+    opacity: 1;
+    transition: opacity 200ms linear, transform 200ms linear;
+    /* display: block; */
+}
+.FIOR:hover .textop {
+    opacity: 0%;
+    top: 40%;
+    height: 60%;
+    transition: opacity 200ms linear, top 200ms linear, height 200ms linear;
+}
+.FIOR:hover .mainnewstext{
+    
+    top: 65%;
+    transition: top 200ms linear;
+
+}
+.FIOR:hover .hidtext{
+    opacity: 1;
+    top: 100%;
+    transition: opacity 250ms linear, top 200ms linear;
+}
+.FIOR:hover div img{
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+
+
+
+.last-tournaments-block{
+    width: 100%;
+    height: auto;
+    float: left;
+    cursor:default;
+}
+.last-tournaments-head{
+    width: 100%;
+    height: auto;
+    color: rgba(255, 255, 255, 0.795);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    /* background-color: #1b1b1b9a; */
+    cursor: default;
+}
+.last-tournament-main{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.last-tournament{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    background-color: #1b1b1b9a;
+}
+.date{
+    width: 15%;
+    height: 100%;
+    line-height: 40px;
+    border-right: 1px solid rgba(80, 80, 80, 0.247);
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.795);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    float: left;
+    /* background-color: aqua; */
+}
+.tournament-name{
+    width: 65%;
+    height: 100%;
+    line-height: 40px;
+    
+    color: rgba(255, 255, 255, 0.795);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+}
+.tournament-name a{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    color: rgba(255, 255, 255, 0.795);
+    text-decoration: none;
+}
+.tournament-name:hover, .tournament-name a:hover{
+    color: rgb(136, 32, 32);
+    background-color: #000000;
+    transition: background-color 250ms linear, color 250ms linear;
+}
+.winner{
+    border-left: 1px solid rgba(80, 80, 80, 0.247);
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    line-height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.795);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    /* font-weight: bold; */
+    text-align: left;
+    float: left;
+}
+.win-txt{
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.win-name{
+    width: 75%;
+    height: auto;
+    padding: 0;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+}
+@media (max-width: 1080px){
+    html, body{overflow-x: visible;}
+    .wrapper{display: block;}
+    .main {
+        width: 100vw;
+        height: auto;
+    }
+    .forza-portal-logo{
+        width: 100vw;
+    }
+    .forza-portal-logo img{
+        width: 100vw;
+    }
+    .content{
+        width: 100vw;
+        
+    }
+    .Team-Wars, .FIOR{
+        width: 49.5vw;
+        height: 50vw;
+    }
+    .Team-Wars{
+        margin-right: 1vw;    
+    }
+    .Team-Wars a div img, .FIOR a div img{
+        width: 50vw;
+        height: 50vw;
+    }
+    .mainnewstext{
+        font-size: 40px;
+    }
+    .date, .winner {
+        font-size: 9px ;
+    }
+    .tournament-name{
+        font-size: 12px;
+    }
+    
+
+
+
+    
+    }
+
+
+
+@media (max-width: 650px){
+    .forza-portal-logo{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .tournament-operators, .last-tournaments-head{
+        font-size: 20px;
+    }
+    .Team-Wars, .FIOR{
+        width: 49.5vw;
+        height: 50vw;
+    }
+    .Team-Wars{
+        margin-right: 0.5vw;    
+    }
+    .Team-Wars a div img, .FIOR a div img{
+        width: 50vw;
+        height: 50vw;
+    }
+    .mainnewstext{
+        font-size: 20px;
+    }
+    .date, .winner {
+        font-size: 6px ;
+    }
+    .winner{
+        padding-left: 5px;
+    }
+    .tournament-name{
+        font-size: 10px;
+    }
+       
+}
+
